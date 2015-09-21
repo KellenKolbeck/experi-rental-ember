@@ -1,0 +1,7 @@
+<h1>Add a new city here!</h1>
+
+<ul>
+  {{#each model as |city-unit|}}
+    {{city-tile city=city-unit destroyCity="destroyCity"}}
+  {{/each}}
+</ul>

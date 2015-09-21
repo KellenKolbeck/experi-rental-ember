@@ -1,0 +1,18 @@
+<div class="container">
+  <h1> Welcome to Experi Rentals </h1>
+
+  We hope you find exactly what you're looking for in a place to stay.
+
+  <ul>
+    {{#each model as |rental-unit|}}
+      {{rental-tile rental=rental-unit destroyRental="destroyRental"}}
+    {{/each}}
+  </ul>
+
+
+  {{new-rental save2="save3"}}
+
+  {{#link-to 'about'}}About{{/link-to}}
+  {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+  {{#link-to 'city'}}Click here to add a new city.{{/link-to}}
+</div>
